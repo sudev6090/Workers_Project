@@ -1,6 +1,6 @@
 import 'package:easy_pie_chart/easy_pie_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:workers_project/db/functions/db_functions.dart';
+import 'package:workers_project/functions/workers_functions.dart';
 
 class PieChartScreen extends StatefulWidget {
   const PieChartScreen({super.key});

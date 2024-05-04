@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:workers_project/db/functions/db_functions.dart';
+import 'package:workers_project/functions/workers_functions.dart';
 import 'package:workers_project/widgets/bottom_nav_screen.dart';
 
 class ConfirmDetailScreen extends StatefulWidget {

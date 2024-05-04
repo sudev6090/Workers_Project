@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:workers_project/db/functions/db_functions.dart';
+import 'package:workers_project/functions/workers_functions.dart';
 
 import 'package:workers_project/models/worker_model/worker_model.dart';
 import 'package:workers_project/widgets/textfield.dart';
