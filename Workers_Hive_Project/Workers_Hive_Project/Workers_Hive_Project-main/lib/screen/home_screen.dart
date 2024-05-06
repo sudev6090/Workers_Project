@@ -12,6 +12,7 @@ class ScreenHome extends StatefulWidget {
   State<ScreenHome> createState() => _ScreenHomeState();
 }
 
+
 class _ScreenHomeState extends State<ScreenHome> {
   @override
   void initState() {
@@ -25,10 +26,9 @@ class _ScreenHomeState extends State<ScreenHome> {
   void searchListUpdate() {
     getAllWorkers();
     searchedList = workerListNotifier.value
-        .where(
-          (workers) =>
-              workers.name.toLowerCase().contains(search.toLowerCase()),
-        )
+        .where((workers) =>
+            workers.name.toLowerCase().contains(search.toLowerCase()) ||
+            workers.place.toLowerCase().contains(search.toLowerCase()))
         .toList();
   }
 
@@ -83,7 +83,7 @@ class _ScreenHomeState extends State<ScreenHome> {
 
 Widget buildworkerList(List<WorkerModel> workersList) {
   return ListView.builder(
-    itemCount: workersList.length,
+    itemCount: workersList.length  , 
     itemBuilder: (context, index) {
       final worker = workersList[index];
       return WorkerListItem(
